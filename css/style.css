@@ -1,0 +1,553 @@
+	/*----------------------------------------------------------------------------- 
+=01 BODY 
+-----------------------------------------------------------------------------*/
+
+
+@font-face {
+  font-family: 'Ostrich';
+  font-weight: normal;
+  src: 	url('../fonts/ostrich-regular-webfont.eot?') format('eot'), 
+  		url('../fonts/ostrich-regular-webfont.woff') format('woff'), 
+  		url('../fonts/ostrich-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ostrich';
+  font-weight: bold;
+  src: 	url('../fonts/ostrich-bold-webfont.eot?') format('eot'), 
+  		url('../fonts/ostrich-bold-webfont.woff') format('woff'), 
+  		url('../fonts/ostrich-bold-webfont.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Ostrich';
+  font-weight: dashed;
+  src: 	url('../fonts/ostrich-dashed-webfont.eot?') format('eot'), 
+  		url('../fonts/ostrich-dashed-webfont.woff') format('woff'), 
+  		url('../fonts/ostrich-dashed-webfont.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Junction';
+  src: 	url('../fonts/Junction-webfont.eot?') format('eot'), 
+  		url('../fonts/Junction-webfont.woff') format('woff'), 
+  		url('../fonts/Junction-webfont.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+
+body {
+	
+	font-family: "Junction", Arial, sans-serif;
+	font-weight: dashed;
+	font-size: 80px;
+	margin: 0px;
+	padding: 0px;
+	color: #7f7d78;
+	font-size: 13px;
+	line-height: 19px;
+}
+
+#trash {
+	float: left;
+	display: inline-block;
+	font-family:"junction", Arial, sans-serif;
+	margin:500px 50px 50px 500px;
+}
+
+#container {
+
+	width: 950px;
+	margin: 0 auto; /*centers our container on the page */   
+}
+
+
+
+#col-right {
+	
+	float: left;
+	width: 300px;		
+	padding:23px 10px 0px 0px;
+	margin:-22px;
+
+
+}
+
+#col-righttop {
+	float: left;
+	margin: 50px 20px 0px 200px;
+	
+
+}
+
+#col-left {
+	float: left;
+	width: 250px;
+	margin-left: 165px;
+	padding: 1px;
+	
+
+}
+#col-rightarch {
+	float: left;
+	width: 100px;
+	position: relative;
+	top: 2px;
+	margin: 50px;
+	padding: 5px 200px 50px 100px;
+
+}
+#col-leftarch{
+	float: left;
+	width: 200px;
+	top: 20px;
+	position:relative;
+	margin: 0 auto;
+	padding: 50px 50px 10px 40px;
+	
+
+}
+
+
+#picsync {
+    position: relative;
+    float: left;
+    margin: -80px -90px 50px 300px;
+    width: 600px;
+    height: 1500px;
+    background: url(../images/arcmadebackground.png) no-repeat ;
+
+      }
+
+#player {
+        position: absolute;
+        float: left;
+        margin: -400px 20px 20px 200px;
+        width: 500px;
+        height: 6000px;
+        background: url(../images/strip2.jpg) no-repeat;
+        z-index:-1;
+ }
+
+ #flicker {
+ 		/*background: url(../images/flicker.gif) no-repeat;
+ 		 opacity:0.45;
+    -moz-opacity:0.45;
+    filter:alpha(opacity=45);*/
+    background: url(../images/flicker.gif) no-repeat;
+    background-repeat: no-repeat;
+    position:absolute;
+    height:220px;
+    width:300px;
+    border-radius: 15px;
+    margin: 590px 10px 200px 515px;
+   
+
+ }
+
+ body.flicker {
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+
+
+*					{ margin: 0; padding: 0; }
+body				{ font-size: 12px; line-height: 30px; font-family: Georgia, serif; }
+
+#page-wrap			{ float: left; width: 244px; height: 792px; margin: 0 auto; position: relative; background-color: #464749; }
+
+.scroll-pane 		{ width: 234px; overflow: auto; padding-left: 10px; padding-right: 10px; height: 792px; }
+
+.bottomshadow 		{ position: absolute; top: 375px; left: -47px; z-index: 9999; }
+
+.jScrollPaneContainer 	{ position: relative; overflow: hidden; z-index: 1; }
+
+.jScrollPaneTrack 		{ position: absolute; cursor: pointer; right: 0; top: 0; height: 100%;
+						  background: url(../images/bar.jpg) top center repeat-y; padding: 3px; }
+
+.jScrollPaneDrag	{ position: absolute; background: url(../images/ball.png) center center no-repeat;
+					  cursor: pointer; overflow: hidden; }
+
+/*----------------------------------------------------------------------------- 
+=02 HEADERS
+-----------------------------------------------------------------------------*/
+
+
+header {
+	float: left;
+	padding: 50px 0px;
+	position: relative;
+
+}
+		
+
+
+	
+	#logo {
+		float: left;
+		background: url(../images/logo.png) no-repeat;
+		width: 400px;
+		height: 245px;
+		font-size:50px;
+
+	}
+	
+		#logo h1 {
+			color: #F50F50;
+			font-weight: dashed;
+			font-size: 90px;
+			line-height:0.9em;
+			float:left;
+		}
+
+
+/*----------------------------------------------------------------------------- 
+=03 GLOBAL STYLES 
+-----------------------------------------------------------------------------*/
+
+h1 {
+	font-family: Ostrich, Arial, sans serif;
+	font-weight: dashed;
+	font-size: 60px;
+}
+
+
+h2 {
+	margin: 0px 0px 20px 50px;
+	font-size: 25px;
+	font-family: Ostrich, Arial, Sans-serif;
+	color: #000000;
+	line-height: 39px;
+}
+
+h3 {
+	margin: 0px 0px 10px 0px;
+	font-size: 20px;
+	font-family: Junction, Arial, Sans-serif;
+	color: black;
+}
+
+h4 {
+	margin: 0px 0px 10px 0px;
+	font-size: 20px;
+	font-family: Junction, Arial, Sans-serif;
+	color: black;
+}
+
+
+
+a { 
+	margin: 0px 47px 0px 25px;
+	font-size: 20px;
+	font-family: Ostrich-regular-webfont, Arial, Sans-serif;
+	font-weight: bold;
+	color:#26689f;
+	text-decoration:none;
+}
+a,1 { 
+	margin: 0px 0px 0px 25px;
+	font-size: 20px;
+	font-family: Ostrich-regular-webfont, Arial, Sans-serif;
+	
+	color:#26689f;
+	text-decoration:none;
+}
+
+
+p { margin: 0px 0px 15px 0px;
+ font-family: Junction, Arial, sans-serif;
+ line-height: 0.9;
+ font-size: 12px;
+ padding: 5px;
+ text-indent: 5px;
+
+ } /* there's no explicit rule, but putting about 15px margin only to the bottom of your p is generally a good rule of thumb */
+
+footer {
+	margin: 20px 0px 10px 0px;
+	font-size: 10px;
+	font-family: Junction, Arial, Sans-serif;
+	color: teal;
+
+}
+/*----------------------------------------------------------------------------- 
+=04 NAV 
+-----------------------------------------------------------------------------*/
+
+#nav {
+	width: 100%;
+	float: left;
+	border-top: groove #999 1px;
+	border-bottom: groove #999 1px;
+	background-image: url(../images/menubar.png);
+	display: block;
+	
+
+}
+
+
+
+ul#navigation li {
+	float: left;
+	display: block;
+	margin-right: -100px;
+	padding: 2px 0px 0px 0px;	
+	margin-left: 10px;
+}
+
+	
+#navigation li a {
+	display: block;
+	width: 200px;
+	padding: 0px 0px 0px 5px;
+	
+}
+
+
+
+/*----------------------------------------------------------------------------- 
+=05 SOCIAL MEDIA  
+-----------------------------------------------------------------------------*/
+
+
+
+#socialMedia {
+	float: right;
+	width: 400px;
+	padding: 50px 40px 20px 0px;
+}
+
+#socialMedia ul li {
+	 display:inline-block;
+	 width:60px;
+	 height:60px;
+	 background:blue;	
+	 text-indent:-9999em;
+}
+
+#socialMedia ul li.linkedIn {
+	background:url(../images/socialNav.png) 0px 64px;
+}
+#socialMedia ul li.twitter {
+	background:url(../images/socialNav.png) -60px 64px; 
+}
+
+#socialMedia ul li.facebook {
+	background:url(../images/socialNav.png) -120px 64px; 
+}
+
+#socialMedia ul li.rss {
+	background:url(../images/socialNav.png) -180px 64px; 
+}
+
+
+
+#socialMedia ul li.linkedIn:hover {
+	background:url(../images/socialNav.png) 0px 0px; 
+}
+
+#socialMedia ul li.twitter:hover {
+	background:url(../images/socialNav.png) -60px 0px; 
+}
+
+#socialMedia ul li.facebook:hover {
+	background:url(../images/socialNav.png) -120px 0px; 
+}
+
+#socialMedia ul li.rss:hover {
+	background:url(../images/socialNav.png) -180px 0px; 
+}
+
+
+#this year{
+
+	
+
+}
+#galleries{
+
+}
+
+#latestblog{
+
+}
+
+
+
+
+/*----------------------------------------------------------------------------- 
+=06 MISC 
+-----------------------------------------------------------------------------*/
+
+
+.clear {
+	clear: both;	
+}
+
+
+
+
+
+.imgright {
+	float: left;
+	margin: 0 auto;
+	padding:0px 20px 0px 0px;
+	
+	
+}
+
+.imgleft {
+	float: left; 
+	margin: 0 auto;
+	padding:0px 20px 0px 0px;
+	
+	
+}
+
+
+
+.fixed {
+	position: fixed;
+	width:750px;
+	height: 90px;
+	top: 200px;
+	left: 400px;
+	background: url(../images/menubar.png) no-repeat;
+}
+
+.rounded {
+ 	
+	
+	width: 560px;
+	border: 1 px inset #BBB;
+	padding: 6px 6px 6px 6px;
+	margin-left: 175px;
+	-o-border-radius: 2 em;
+	-moz-border-radius: 2 em; /* Firefox */
+ 	-webkit-border-radius: 2 em ; /* Safari, Chrome */
+ 	
+	border-radius: 20px;/* CSS3 */
+	box-shadow: inset 1px 15px 30px rgba(0, 0, 0, .2);
+}
+
+.round {
+	-moz-border-radius: 200px; /* Firefox */
+ 	-webkit-border-radius: 200px ; /* Safari, Chrome */
+ 	
+	border-radius: 200px;/* CSS3 */
+	box-shadow: inset 0px 5px 10px 10px rgba(0,0,0, .2);
+}
+
+
+
+.box {
+	width: 50px;
+	height: 50px;
+	float: center;
+	margin: 20px;
+	padding: 20px;
+	background: url(../images/thumbnail.jpg) no-repeat;
+}	
+
+
+
+.shadow {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')"; /* For IE 8 */
+	-moz-box-shadow: 0px -10px 30px rgba(225, 0, 0, .3) ; /* Firefox */
+	-webkit-box-shadow: 0px -10px 30px rgba(225, 0, 0, .3); /* Safari, Chrome */
+	
+	box-shadow: 0px -10px 30px rgba(225, 0, 0, .3); /* CSS 3 */
+	
+
+}
+
+.newspaper {
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
+
+-moz-column-gap:20px; /* Firefox */
+-webkit-column-gap:20px; /* Safari and Chrome */
+column-gap:20px;
+}
+
+
+
+
+nav {
+	background: black;
+}
+
+nav a{
+	color: white;
+}
+
+
+
+  
+ ul#tabs { 
+  	list-style-type:none;
+	margin: 1px 0px 0px 1px;
+	padding: 0.3em 0em 0em 0em; 
+	z-index: 1;
+}
+ 
+ul#tabs li { 
+ 	display: inline;
+ 	padding: 10px; 
+}
+ 
+ul#tabs li a { 
+ 	color: #42454a; 
+	background-color: white;
+	border: 1px dashed #c9c3ba;
+	border-bottom: none;
+	text-decoration: none;
+	padding: 0.3em 0.3em 0.38em  
+}
+
+ul#tabs li a:hover { 
+ 	color: teal; 
+}
+ 
+ul#tabs li a.selected { 
+ 	color: #000; 
+	background-color: #f1f0ee; 
+	padding: 0.3em 0.3em 0.38em  
+}
+ 
+div.tabContent { 
+	border: 1px dashed #c9c3ba; 
+	padding: 0.5em; 
+	background-color: white;
+	font-family: Junction, Arial, sans-serif;
+	font-size: 20px;
+
+}
+ 
+div.tabContent.hide { 
+ 	display: none; 
+}
+
+ul#tabs {
+	margin: 1px;
+}
+
+ul#tabs li {
+	margin: 1px;
+}
+
+ul#tabs li a {
+	border-radius: 9px 9px 0 0;
+}
+
+.tabContent {
+	border-radius: 10px;
+}
