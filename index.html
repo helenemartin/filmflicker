@@ -46,14 +46,42 @@
   }
 
 
-  var switchFrame = document.getElementById("flicker");
-    function removeFrame() {
-      setTimeout(function(){switchFrame.style.display="none";}, 100);
+  var frame = document.getElementById("flicker");
+  var words = ['flicker', 'apple', 'words', 'help']
+
+  function randomFrame() {
+    var random = Math.random()
+    var number = Math.floor(random * 10)
+  
+    movePlayer();
+    if (number % 2 === 1) {
+      switchFrame ('block');
+      if (number % 4 === 1) {
+        var word = words[Math.floor((Math.random() * words.length))];
+        var textElement = document.getElementById('text');
+        textElement.innerHTML = word
+        document.getElementById('text').style.zIndex = 11;
+        // document.getElementById('text').style.display = 'block';
+      } 
+    } else {
+      switchFrame ('none');
+       document.getElementById('text').style.zIndex = 1;
+       // document.getElementById('text').style.display = 'none';
+    }
+    //setTimeout(function(){frame.style.display="none";}, 100);
+    /*
+    setTimeout(switchFrame('none'), 100);
      setTimeout(function(){
-      switchFrame.style.display="block"; movePlayer();
+      switchFrame('block'); 
+      movePlayer();
     }, 200);
+    */
   };
 
- setInterval(function(){removeFrame()},200); 
+  setInterval(function(){randomFrame()},200); 
 
+  function switchFrame (action) {
+    frame.style.display = action;
+  } 
+ 
 </script>
