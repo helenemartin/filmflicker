@@ -26,34 +26,28 @@
 
       </div></div>
        <div id="flicker" class="blackframe"></div>
-</div>
+
+
+ <script>
+    var switchFrame = document.getElementById("flicker");
+     var playerY = 0; //where should the top be at the beginning?
+ 
+       function movePlayer() {
+      switchFrame.style.display="block";
+  
+     setTimeout(function(){switchFrame.style.display="none";}, 100)
+ 
+   // what is the top at the moment we should loop back?
+      playerY = (playerY > -4000) ? playerY - 480 : 0;
+      // console.log(playerY);
+ 
+     $('#player').css("top", playerY);
+ 
+    }
+        
+     setInterval(movePlayer, 1000);
+</script>
 </body>
 </html>
-<script>
-  var playerY = 0; //where should the top be at the beginning?
-
-  function movePlayer() {
-    if (playerY < 625) // what is the top at the moment we should loop back?
-    {
-      playerY = playerY + 625;
-    }
-    else {
-      playerY = 0;
-    }
-    // console.log(playerY);
-
-    $('#player').css("top", playerY);
-  }
 
 
-  var switchFrame = document.getElementById("flicker");
-    function removeFrame() {
-      setTimeout(function(){switchFrame.style.display="none";}, 100);
-     setTimeout(function(){
-      switchFrame.style.display="block"; movePlayer();
-    }, 200);
-  };
-
- setInterval(function(){removeFrame()},200); 
-
-</script>
