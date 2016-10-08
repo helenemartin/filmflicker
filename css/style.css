@@ -153,6 +153,26 @@ body {
 
  }
 
+  #text {
+ 		/*background: url(../images/flicker.gif) no-repeat;
+ 		 opacity:0.45;
+    -moz-opacity:0.45;
+    filter:alpha(opacity=45);*/
+   /* background: url(../images/flicker.gif) no-repeat;*/
+   
+   
+    position:absolute;
+    z-index: 10;
+    height:220px;
+    width:300px;
+    border-radius: 15px;
+    margin: 590px 10px 200px 515px;
+    right: 300px;
+    bottom: -300px;
+   
+
+ }
+
  .blackframe {
  	background-color: black;
  }
