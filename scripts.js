@@ -16,6 +16,7 @@
 /////////////////////////////////////
 // var TOP_UP = true;
 var TOP_UP = false;
+var SHOW_FILM_2 = false;
 
 var TOP_DOWN_START = -4320;
 var MAX_POS = -4000;
@@ -31,6 +32,12 @@ if (TOP_UP === false) {
 
 var switchFrame = document.getElementById("flicker");
 
+if (SHOW_FILM_2 === true) {
+	var projector = document.getElementById("player");
+
+	projector.classList.remove('playerFilm1');
+	projector.classList.add('playerFilm2');
+}
 
 startPlayer();
 
