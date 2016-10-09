@@ -29,23 +29,6 @@
 
 
  <script>
-    var switchFrame = document.getElementById("flicker");
-     var playerY = 0; //where should the top be at the beginning?
- 
-       function movePlayer() {
-      switchFrame.style.display="block";
-  
-     setTimeout(function(){switchFrame.style.display="none";}, 100)
- 
-   // what is the top at the moment we should loop back?
-      playerY = (playerY > -4000) ? playerY - 480 : 0;
-      // console.log(playerY);
- 
-     $('#player').css("top", playerY);
- 
-    }
-        
-     setInterval(movePlayer, 1000);
 </script>
 </body>
 </html>
