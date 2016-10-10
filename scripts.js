@@ -84,7 +84,7 @@ function startPlayer() {
 		$('#player').css("top", playerY);
 	}
         
-  setInterval(movePlayer, 1000);
+  setInterval(movePlayer, 100);
 }
 
 
