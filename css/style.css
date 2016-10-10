@@ -153,6 +153,20 @@ body {
 
  }
 
+ #text {
+ 		position:absolute;
+    font-family: Arial;
+    font-size: 100px;
+    color: grey;
+    height:220px;
+    width:300px;
+    top:650px;
+  	right:750px;
+  	bottom:150px;
+  	
+ }
+
+
  .blackframe {
  	background-color: black;
  }
