@@ -11,42 +11,23 @@
     
     <script src="jquery.js"></script>
   </head>
-<div id="wrapper" class="container_12">
-  
   <body class="flicker">
-    
-    <header>
-      <!-- <h1>Film!</h1>
-      <h3>& back<a href="home1.html">Home</a></h3> -->
-    </header>
+    <div id="wrapper" class="container_12">     
+      <header>
+        <!-- <h1>Film!</h1>
+        <h3>& back<a href="home1.html">Home</a></h3> -->
+      </header>
 
-      <div id="picsync">
-       
-        <div id="player">
+      <div id="picsync">     
+        <div id="player" class="playerFilm1">
 
-      </div></div>
-       <div id="flicker" class="blackframe"></div>
-
-
- <script>
-    var switchFrame = document.getElementById("flicker");
-     var playerY = 0; //where should the top be at the beginning?
- 
-       function movePlayer() {
-      switchFrame.style.display="block";
-  
-     setTimeout(function(){switchFrame.style.display="none";}, 100)
- 
-   // what is the top at the moment we should loop back?
-      playerY = (playerY > -4000) ? playerY - 480 : 0;
-      // console.log(playerY);
- 
-     $('#player').css("top", playerY);
- 
-    }
-        
-     setInterval(movePlayer, 1000);
-</script>
+        </div>
+      </div>
+      <div id="flicker" class="blackframe">
+      </div>
+    </div>
+  <!-- keep this script included here (i.e. don't move to to head section) -->
+  <script src="scripts.js"></script>
 </body>
 </html>
 
