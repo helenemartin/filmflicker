@@ -22,6 +22,8 @@ var TOP_DOWN_START = -4320;
 var MAX_POS = -4000;
 var FRAME_SIZE = -480;
 var playerY = 0; //where should the top be at the beginning?
+var strips = ["url(../FilmFlicker/images/strip2.jpg)", "url(../FilmFlicker/images/strippink.jpg)", "url(../FilmFlicker/images/stripblue.jpg)" ];
+var counter = 0;
 
 // this (one-time) check makes frame size negative
 if (TOP_UP === false) {
@@ -77,11 +79,18 @@ function startPlayer() {
 			else {
 				playerY = TOP_DOWN_START;
 				//this is where the loop changes
-				$("#player").addClass('playerFilm2');
+				$("#player").css("background", strips[counter] + ' no-repeat');
+				if (counter === strips.length) {
+					counter = 0;
+				}
+				else {
+					counter++;
+				}
+				
 			}
 		}
 
-		console.log($("#player").css("background-image"));
+		console.log($("#player").css("background"));
 
 		$('#player').css("top", playerY);
 	}
