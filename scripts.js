@@ -76,15 +76,17 @@ function startPlayer() {
 			}
 			else {
 				playerY = TOP_DOWN_START;
+				//this is where the loop changes
+				$("#player").addClass('playerFilm2');
 			}
 		}
 
-		// console.log(playerY);
+		console.log($("#player").css("background-image"));
 
 		$('#player').css("top", playerY);
 	}
         
-  setInterval(movePlayer, 1000);
+  setInterval(movePlayer, 500);
 }
 
 
