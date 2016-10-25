@@ -22,7 +22,7 @@ var TOP_DOWN_START = -4320;
 var MAX_POS = -4000;
 var FRAME_SIZE = -480;
 var playerY = 0; //where should the top be at the beginning?
-var strips = ["url(../images/strip2.jpg)", "url(../images/strippink.jpg)", "url(../images/stripblue.jpg)" ];
+var strips = ["url(./filmflicker/images/strip2.jpg)", "url(./filmflicker/images/strippink.jpg)", "url(./filmflicker/images/stripblue.jpg)" ];
 var counter = 0;
 
 // this (one-time) check makes frame size negative
